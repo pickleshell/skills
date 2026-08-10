@@ -1,6 +1,6 @@
 ---
 name: assistant-notebook
-description: Consult and maintain the user's persistent Assistant Notebook in ChatGPT Library or on the local filesystem as a secondary recall aid and index. The current conversation and other available context are primary and usually more complete. Use before every substantive work task, including when the current conversation appears complete, as a preventive checkpoint against context loss. This includes projects, job search, companies, applications, files, legal or administrative matters, plans, decisions, TODOs, and any request whose correctness may depend on prior work. Also use during and after meaningful progress to record verified outcomes, decisions, files, blockers, and next steps.
+description: Consult and maintain the user's persistent Assistant Notebook in ChatGPT Library or on the local filesystem as a secondary recall aid and index. The current conversation and other available context are primary and usually more complete. Consult it once when starting a substantive working context or restoring continuity, then reuse the recovered context without rereading the notebook on every request. Reconsult only when needed for a missing fact, older decision, project switch, or context loss. Update it after meaningful progress with verified outcomes, decisions, files, blockers, and next steps.
 ---
 
 # Assistant Notebook
@@ -39,9 +39,18 @@ local artifacts, repositories, tools, and other current sources before deciding
 or acting. The notebook initiates retrieval; it does not bound what may be
 recalled.
 
-## Before work
+## Context initialization and re-entry
 
-Consult the notebook before every substantive work task, even when the active conversation already seems to contain sufficient context. Treat this as a preventive continuity checkpoint, not only as recovery after confusion or context loss.
+Consult the notebook once when starting a new substantive working context or
+when continuity needs to be restored. After reading it, keep the recovered
+information in the active working context and continue from that context.
+
+Do not search, scan, or reread the notebook before every message or task in the
+same continuous working context. Reconsult it only when a relevant fact or
+older decision is missing, the user switches to a different project or stable
+subject, available context has been compacted or lost, or a conflict requires
+checking the durable record. This avoids unnecessary retrieval and token use
+and prevents stale notes from repeatedly displacing current context.
 
 1. In ChatGPT, search the Library by the exact title `Assistant Notebook - Contents.md`.
    In Codex/local mode, locate that exact filename under the selected notebook
