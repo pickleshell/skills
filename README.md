@@ -1,12 +1,11 @@
-# Skills
+# Skills for ChatGPT and Codex
 
-Reusable skills for ChatGPT and Codex.
+A collection of reusable skills that extend ChatGPT and Codex with practical workflows.
 
-## Available skills
+## Contents
 
-### Assistant Notebook
+| Skill | What it does | Links |
+| --- | --- | --- |
+| Assistant Notebook | Gives ChatGPT a persistent working notebook in Library so it can restore project context and record important progress across conversations. | [Description and installation](assistant-notebook/README.md) · [Skill source](assistant-notebook/SKILL.md) |
 
-Persistent working notes in ChatGPT Library for projects and other long-running tasks.
-
-- [Description and installation instructions](assistant-notebook/README.md)
-- [Skill source](assistant-notebook/SKILL.md)
+More skills will be added to this catalog over time.
