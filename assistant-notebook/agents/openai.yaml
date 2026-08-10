@@ -1,0 +1,13 @@
+interface:
+  display_name: "Assistant Notebook"
+  short_description: "Consult and maintain the working notebook"
+  default_prompt: "Use $assistant-notebook to consult my work notebook before continuing and update it after meaningful progress."
+  icon_small: "assets/icon.svg"
+  icon_large: "assets/icon.svg"
+policy:
+  products:
+    - "chatgpt"
+    - "codex"
+    - "api"
+    - "atlas"
+  allow_implicit_invocation: true
