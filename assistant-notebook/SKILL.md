@@ -28,6 +28,16 @@ Current verified evidence and explicit current user instructions override stale
 or conflicting notebook notes. The notebook should restore missing context, not
 narrow, replace, or discard richer context already available in the
 conversation, attached files, repositories, tools, or other current sources.
+Treat notebook entries as retrieval cues and routing prompts, not
+self-contained context. Use project names, people, companies, decisions,
+statuses, dates, links, and artifact references to identify which fuller prior
+context is relevant.
+
+When a cue points to prior work, recover the fuller available context from
+conversation/interaction history, personal context, attached files, Library or
+local artifacts, repositories, tools, and other current sources before deciding
+or acting. The notebook initiates retrieval; it does not bound what may be
+recalled.
 
 ## Before work
 
@@ -38,7 +48,7 @@ Consult the notebook before every substantive work task, even when the active co
    directory.
 2. Read the contents page; never rely on a search snippet alone.
 3. Follow its routing table and read only the relevant notebook page or pages.
-4. Reconcile the relevant notebook information with the active conversation and other currently available context, keeping current context primary and the notebook secondary. Merge useful notebook recall without assuming it is complete or current. Never replace or narrow the current context to what the notebook contains.
+4. Use relevant notebook entries as retrieval cues to recover fuller related context from the active conversation, available history, personal context, attached files, Library or local artifacts, repositories, tools, and other current sources. Then reconcile that recovered context with the active conversation and other currently available context, keeping available context primary and the notebook secondary. Merge useful notebook recall without assuming it is complete or current. Never replace or narrow the current context to what the notebook contains.
 5. Treat notebook entries as orientation, not proof that an external action succeeded. Verify repositories, services, forms, correspondence, or source files when factual completion matters.
 6. Expect the common case that recent discussion or progress exists in the active context but was not written to the notebook. Use it for the task and add durable missing information to the appropriate page as soon as the gap is noticed, including during the task rather than waiting until the end.
 7. Resolve discrepancies by current user instructions, verified evidence, recency, specificity, and status. Verified current evidence and explicit current instructions win over stale notes. If a discrepancy cannot be resolved safely, preserve the uncertainty instead of silently overwriting either account.

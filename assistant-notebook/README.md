@@ -15,6 +15,9 @@ The current conversation and other available context remain the primary source
 for the work at hand. The notebook is compact secondary memory: it helps recall
 missing context and find durable notes, but it should not replace richer current
 context or override verified current instructions.
+It also acts as a retrieval cue that helps the agent identify and recover the
+fuller relevant context; it is not a self-contained replacement for that
+context.
 
 The notebook is useful for:
 
