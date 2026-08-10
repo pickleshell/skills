@@ -1,6 +1,6 @@
 ---
 name: assistant-notebook
-description: Consult and maintain the user's persistent Assistant Notebook in ChatGPT Library or on the local filesystem. Use before every substantive work task, including when the current conversation appears complete, as a preventive checkpoint against context loss. This includes projects, job search, companies, applications, files, legal or administrative matters, plans, decisions, TODOs, and any request whose correctness may depend on prior work. Also use during and after meaningful progress to record verified outcomes, decisions, files, blockers, and next steps.
+description: Consult and maintain the user's persistent Assistant Notebook in ChatGPT Library or on the local filesystem as a secondary recall aid and index. The current conversation and other available context are primary and usually more complete. Use before every substantive work task, including when the current conversation appears complete, as a preventive checkpoint against context loss. This includes projects, job search, companies, applications, files, legal or administrative matters, plans, decisions, TODOs, and any request whose correctness may depend on prior work. Also use during and after meaningful progress to record verified outcomes, decisions, files, blockers, and next steps.
 ---
 
 # Assistant Notebook
@@ -17,6 +17,18 @@ backend. Do not copy or export ChatGPT conversation history or personal memory
 into either backend. Never place the notebook in a repository unless the user
 explicitly chooses that location.
 
+## Context priority
+
+Use the active conversation and other currently available context as the
+primary working source. Treat the notebook as a compact secondary recall aid
+and index that can restore missing context, point to durable artifacts, and
+surface prior decisions.
+
+Current verified evidence and explicit current user instructions override stale
+or conflicting notebook notes. The notebook should restore missing context, not
+narrow, replace, or discard richer context already available in the
+conversation, attached files, repositories, tools, or other current sources.
+
 ## Before work
 
 Consult the notebook before every substantive work task, even when the active conversation already seems to contain sufficient context. Treat this as a preventive continuity checkpoint, not only as recovery after confusion or context loss.
@@ -26,10 +38,10 @@ Consult the notebook before every substantive work task, even when the active co
    directory.
 2. Read the contents page; never rely on a search snippet alone.
 3. Follow its routing table and read only the relevant notebook page or pages.
-4. Reconcile the relevant notebook information with the active conversation and other currently available context as two potentially unsynchronized sources; merge them without assuming either one is complete. Never replace or narrow the current context to what the notebook contains.
+4. Reconcile the relevant notebook information with the active conversation and other currently available context, keeping current context primary and the notebook secondary. Merge useful notebook recall without assuming it is complete or current. Never replace or narrow the current context to what the notebook contains.
 5. Treat notebook entries as orientation, not proof that an external action succeeded. Verify repositories, services, forms, correspondence, or source files when factual completion matters.
 6. Expect the common case that recent discussion or progress exists in the active context but was not written to the notebook. Use it for the task and add durable missing information to the appropriate page as soon as the gap is noticed, including during the task rather than waiting until the end.
-7. Resolve discrepancies by recency, specificity, status, and evidence rather than a blanket source priority. Verified current evidence wins. If a discrepancy cannot be resolved safely, preserve the uncertainty instead of silently overwriting either account.
+7. Resolve discrepancies by current user instructions, verified evidence, recency, specificity, and status. Verified current evidence and explicit current instructions win over stale notes. If a discrepancy cannot be resolved safely, preserve the uncertainty instead of silently overwriting either account.
 
 If the contents page is unavailable, say so briefly and continue from verified
 available context. Do not create a second notebook automatically. Create a

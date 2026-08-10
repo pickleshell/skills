@@ -11,6 +11,11 @@ ChatGPT uses ChatGPT Library. Codex and other local agents use a matching
 notebook directory on the local filesystem. The workflow and page structure are
 the same in both modes.
 
+The current conversation and other available context remain the primary source
+for the work at hand. The notebook is compact secondary memory: it helps recall
+missing context and find durable notes, but it should not replace richer current
+context or override verified current instructions.
+
 The notebook is useful for:
 
 - long-running projects;
