@@ -39,6 +39,14 @@ local artifacts, repositories, tools, and other current sources before deciding
 or acting. The notebook initiates retrieval; it does not bound what may be
 recalled.
 
+## Contents page
+
+`Assistant Notebook - Contents.md` is a table of contents and routing map for
+the user's broader context. Use it to switch contexts quickly and locate fuller
+context in subject pages, source artifacts, repositories, tools, or the active
+conversation. Keep detailed context on the appropriate subject page or source
+artifact; keep `Contents.md` routing-only.
+
 ## Context initialization and re-entry
 
 Consult the notebook once when starting a new substantive working context or
@@ -84,6 +92,11 @@ Preserve unrelated page content and Library file identity/version history; for
 local files, preserve unrelated pages and use atomic replacement.
 
 Update `Assistant Notebook - Contents.md` only when adding, renaming, or removing a page, or when its one-line status summary changes materially. Do not use it as an activity log.
+
+When older relevant context is recovered during normal work, incrementally
+backfill durable decisions, facts, artifact references, status, and next
+actions into the appropriate subject page. Do not bulk-import history, copy
+whole conversations, or put detailed history in `Contents.md`.
 
 ## Notes and artifacts
 
