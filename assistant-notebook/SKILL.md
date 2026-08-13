@@ -20,9 +20,12 @@ explicitly chooses that location.
 ## Context priority
 
 Use the active conversation and other currently available context as the
-primary working source. Treat the notebook as a compact secondary recall aid
-and index that can restore missing context, point to durable artifacts, and
-surface prior decisions.
+primary working source. The full context may contain everything: discussion,
+reasoning, alternatives, intermediate details, and transient remarks. Treat the
+notebook as a compact secondary recall aid and index containing only the most
+important durable facts, decisions, preferences, corrections, status, and
+retrieval cues needed to locate and reconstruct the fuller context. The
+notebook must not copy or attempt to replace the full context.
 
 Current verified evidence and explicit current user instructions override stale
 or conflicting notebook notes. The notebook should restore missing context, not
@@ -76,6 +79,13 @@ local notebook only during explicit setup or when the user explicitly asks for
 one.
 
 ## During and after work
+
+Write short notebook notes during a substantive discussion whenever an
+important durable detail emerges that would help reconstruct the context later.
+Capture decisions, corrected assumptions, preferences, constraints, status
+changes, and important rationale while they are fresh; do not wait for the task
+to finish or for the user to ask whether the notebook was updated. Keep these
+notes compact retrieval cues rather than transcripts.
 
 Update the relevant existing page after meaningful progress. Record concise, durable facts:
 
