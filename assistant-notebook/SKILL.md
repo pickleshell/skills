@@ -1,6 +1,6 @@
 ---
 name: assistant-notebook
-description: Consult and maintain the user's persistent Assistant Notebook in ChatGPT Library or on the local filesystem as a secondary recall aid and index. The current conversation and other available context are primary and usually more complete. Consult it once when starting a substantive working context or restoring continuity, then reuse the recovered context without rereading the notebook on every request. Reconsult only when needed for a missing fact, older decision, project switch, or context loss. Update it after meaningful progress with verified outcomes, decisions, files, blockers, and next steps.
+description: Consult and maintain the user's persistent Assistant Notebook in ChatGPT Library or on the local filesystem as a curated project index and secondary recall aid. The current conversation and verified live state are primary. Consult Contents and only the relevant page once when starting a substantive working context or restoring continuity, before any focused associative-memory lookup; do not reread it on every request. Update it after meaningful progress with curated decisions, status, retrieval cues, verified outcomes, blockers, and next steps.
 ---
 
 # Assistant Notebook
@@ -36,6 +36,23 @@ self-contained context. Use project names, people, companies, decisions,
 statuses, dates, links, and artifact references to identify which fuller prior
 context is relevant.
 
+## Coordination with associative memory
+
+Use the notebook first for curated routing and project status. If Mem0 or
+another associative memory is available, query it afterward only for focused
+missing details that would be useful; never bulk-retrieve it. Keep associative
+memory atomic and semantic, while the notebook holds the curated index,
+decisions, status, retrieval cues, verified outcomes, blockers, and next steps.
+
+Do not copy the notebook into associative memory, automatically synchronize
+the systems, or write identical text to both. After meaningful progress, add a
+curated outcome or navigation update here and store only separate durable
+atomic facts in associative memory. For an explicit request to remember,
+associative-memory write and verification take priority; update the notebook
+too only when the item is a decision, status, or next step that belongs in the
+curated project index. Each mechanism must remain usable when the other is
+unavailable.
+
 When a cue points to prior work, recover the fuller available context from
 conversation/interaction history, personal context, attached files, Library or
 local artifacts, repositories, tools, and other current sources before deciding
@@ -67,7 +84,7 @@ and prevents stale notes from repeatedly displacing current context.
    In Codex/local mode, locate that exact filename under the selected notebook
    directory.
 2. Read the contents page; never rely on a search snippet alone.
-3. Follow its routing table and read only the relevant notebook page or pages.
+3. Follow its routing table and read only the relevant notebook page.
 4. Use relevant notebook entries as retrieval cues to recover fuller related context from the active conversation, available history, personal context, attached files, Library or local artifacts, repositories, tools, and other current sources. Then reconcile that recovered context with the active conversation and other currently available context, keeping available context primary and the notebook secondary. Merge useful notebook recall without assuming it is complete or current. Never replace or narrow the current context to what the notebook contains.
 5. Treat notebook entries as orientation, not proof that an external action succeeded. Verify repositories, services, forms, correspondence, or source files when factual completion matters.
 6. Expect the common case that recent discussion or progress exists in the active context but was not written to the notebook. Use it for the task and add durable missing information to the appropriate page as soon as the gap is noticed, including during the task rather than waiting until the end.
