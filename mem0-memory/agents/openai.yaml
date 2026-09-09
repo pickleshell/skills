@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mem0 Memory"
+  short_description: "Use durable BOS-local memory safely"
+  default_prompt: "Use $mem0-memory to recall relevant project context and preserve verified durable progress."
